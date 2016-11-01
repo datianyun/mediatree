@@ -1,0 +1,204 @@
+.header {
+    position: relative;
+    z-index: 29;
+    height: 73px;
+    border-top: 3px solid #5091f6;
+    border-bottom: 1px solid #eeeeef;
+    background-color: #fff
+}
+.header .container{
+    position: relative;
+}
+.header-login,.logo {
+    position: absolute;
+    top: 0
+}
+.header-login .dropdown-menu{
+    display: none;
+}
+.header-login.show .dropdown-menu{
+    display: block;
+}
+.header .logo{
+    left: 20px;
+    font-size: 1.1em;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+.header .logo-link, .login .logo-link {
+    width: 273px;
+    height: 36px;
+    margin-top: 18px;
+}
+.logo {
+    left: 0
+}
+
+.logo-link {
+    display: block;
+    width: 260px;
+    height: 73px;
+    background: url(assets/logo.png) no-repeat
+}
+.login .logo-link {
+    background: url(assets/logo_black.png) no-repeat;
+}
+
+.logo-link {
+    background: url(assets/backLogo.png) no-repeat;
+}
+
+.header-login .link-message,.header-login .user,.header-login .user .name {
+    display: inline-block;
+    position: relative
+}
+
+.header-login {
+    right: 0;
+    padding-top: 17px
+}
+
+.header-login .user {
+    vertical-align: top;
+    cursor: pointer;
+    font-size: 16px;
+    font-size: 0
+}
+
+.header-login .user .name {
+    vertical-align: top;
+    font-size: 16px;
+    top: 10px;
+    margin-left: 6px;
+    height: 45px
+}
+
+.header-login .user .name .caret {
+    margin-left: 5px;
+    margin-top: -3px
+}
+
+.header-login .link-reg {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 5px 0
+}
+
+.header-login .line {
+    font-weight: 400;
+    font-style: normal;
+    color: #8d8d8d;
+    position: relative;
+    top: -1px;
+    font-size: 12px
+}
+
+.header-login .link-message {
+    vertical-align: top;
+    top: 16px;
+    margin-right: 10px
+}
+
+.header-login .link-message .icon-dot-red {
+    position: absolute;
+    right: -3px;
+    top: -2px
+}
+
+.header-login .label-shenfen {
+    position: absolute;
+    left: 51px;
+    top: -2px
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175)
+}
+
+.dropdown-menu-right,.dropdown-menu.pull-right {
+    right: 0;
+    left: auto
+}
+
+.dropdown-header,.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    line-height: 1.42857143;
+    white-space: nowrap
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5
+}
+
+.dropdown-menu>li>a {
+    clear: both;
+    font-weight: 400;
+    color: #333
+}
+
+.dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5
+}
+
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7;
+    outline: 0
+}
+
+.dropdown-menu>.disabled>a,.dropdown-menu>.disabled>a:focus,.dropdown-menu>.disabled>a:hover {
+    color: #777
+}
+
+.dropdown-menu>.disabled>a:focus,.dropdown-menu>.disabled>a:hover {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+}
+
+.open>.dropdown-menu {
+    display: block
+}
+
+.open>a {
+    outline: 0
+}
+.caret {
+    width: 0;
+    height: 0;
+    color: #666;
+    margin-left: 2px;
+    border-top: 5px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+}

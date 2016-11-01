@@ -1,0 +1,222 @@
+.main-heading {
+    position: relative;
+    margin-bottom: 30px
+}
+
+.main-heading h2 {
+    color: #333;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 100
+}
+
+.main-heading.bor-bottom {
+    padding-bottom: 11px;
+    border-bottom: 1px solid #cbcbcb
+}
+
+.main-heading .option {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.main-heading .option span {
+    color: #999
+}
+
+.main-inline .option {
+    float: right;
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px
+}
+
+.main-inline .option .icon-article-guide {
+    margin-left: 6px;
+    top: 4px
+}
+
+.breadcrumb-mod {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.breadcrumb {
+    font-size: 0
+}
+
+.breadcrumb li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    color: #999;
+    margin-right: 5px
+}
+
+.breadcrumb li a {
+    color: #666
+}
+
+.breadcrumb-mod .breadcrumb {
+    float: left;
+    margin-top: 6px
+}
+
+.breadcrumb-mod h3 {
+    float: left;
+    color: #666;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 100
+}
+
+.breadcrumb-mod .option {
+    float: right
+}
+
+.breadcrumb-mod .option .count {
+    font-size: 14px;
+    color: #999;
+    margin-right: 5px
+}
+
+.breadcrumb-mod .option .count em {
+    color: #5091f6
+}
+
+.breadcrumb-mod .option .count.null em {
+    color: #999
+}
+
+.breadcrumb-mod .btn {
+    vertical-align: top;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.breadcrumb-mod .btn .icon-add {
+    top: 9px;
+    margin-right: 3px
+}
+
+.breadcrumb-mod .upload-progress-inline {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 9px;
+    margin-right: 10px
+}
+
+.breadcrumb-mod .col-md-2 {
+    margin-left: 10px
+}
+
+.breadcrumb-mod .expStatusCon,.breadcrumb-mod .orderQQlevel,.breadcrumb-mod .orderStatus {
+    width: 135px;
+    float: left
+}
+
+.breadcrumb-mod .userRole {
+    width: 135px;
+    float: left;
+    margin-left: 10px;
+    display: none
+}
+
+.breadcrumb-mod .userTip {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #cbcbcb
+}
+
+.breadcrumb-mod .orderQQlevel {
+    margin-left: 10px
+}
+
+.breadcrumb-mod .orderIndex {
+    width: 300px;
+    float: left;
+    margin-left: 10px
+}
+
+.breadcrumb-mod .expNameCon,.breadcrumb-mod .orderBegin {
+    width: 220px;
+    float: left;
+    margin-left: 10px
+}
+
+.breadcrumb-mod .expNameCon input,.breadcrumb-mod .orderBegin input,.breadcrumb-mod .orderIndex input {
+    width: 100%;
+    padding: 6px 0;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    display: table-cell;
+    text-indent: 5px;
+}
+
+.breadcrumb-mod {
+    min-height: 35px
+}
+
+.breadcrumb-mod .expDesc {
+    padding-left: 5px;
+    line-height: 36px
+}
+
+.breadcrumb-mod .expName {
+    margin-right: 10px
+}
+
+.breadcrumb-mod .expInfo {
+    margin-left: 10px;
+    color: #bbb
+}
+
+.breadcrumb-mod .input-group-btn {
+    float: left;
+    margin-left: 10px
+}
+
+.breadcrumb-mod .input-group-btn .btn {
+    padding: 0 40px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center
+}
+
+.input-group .form-control,select.form-control {
+    font-size: 14px;
+    padding: 10px 0;
+    color: #55595c;
+    text-align-last: center
+}
+.input-group-btn .back{
+    margin-left: 10px;
+}
+select.form-control {
+    display: block;
+    width: 100%;
+    line-height: 1rem;
+    background: url(https://mat1.gtimg.com/house/houseria/2016/om-exp/1/img/select.png) right center no-repeat #fff!important;
+    background-size: 24px 20px!important;
+    border-radius: 0!important;
+    border: 1px solid #d1d4d7!important;
+    cursor: pointer;
+    -webkit-appearance: none
+}
+.breadcrumb-mod .option .btn {
+    border-radius: 0;
+    padding: 0 60px;
+    height: 33px;
+    line-height: 33px;
+    display: block;
+}

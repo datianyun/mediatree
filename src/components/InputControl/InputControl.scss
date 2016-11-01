@@ -1,0 +1,55 @@
+.form-control {
+    overflow: visible;
+    width: 300px;
+    float: left;
+    position: relative;
+    .input-control {
+        position: relative;
+        padding-left: 30px;
+        padding-right: 50px;
+        .input-text{
+            width: 100%;
+            margin-left: -30px;
+            padding-right: 64px;
+        }
+    }
+    input {
+       padding: 10px 14px;
+       height: 18px;
+       line-height: 18px;
+       color: #666;
+       font-size: 14px;
+       background: #fff;
+       border: 1px solid #e1e1e1;
+       border-radius: 2px;
+       width: 300px;
+    }
+    .input-control-count .count {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 10px;
+        color: #999;
+        font-size: 14px;
+        line-height: 38px
+    }
+    .help-block {
+        font-size: 12px;
+        line-height: 20px;
+        color: #999;
+        margin-top: 5px
+    }
+
+    .help-block .icon-fail-sm,.help-block .icon-success-sm {
+        top: 2px;
+        margin-right: 5px
+    }
+
+    .help-block.error {
+        color: #f54040
+    }
+
+    .help-error {
+        color: #f54040
+    }
+}

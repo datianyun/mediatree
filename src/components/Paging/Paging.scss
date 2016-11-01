@@ -1,0 +1,90 @@
+.pagination {
+    font-size: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.pagination li,.pagination li a {
+    display: inline-block;
+    vertical-align: top
+}
+
+.pagination li {
+    margin-left: 7px;
+    padding-right: 7px
+}
+
+.pagination li a {
+    line-height: 22px;
+    height: 22px;
+    padding: 0 7px;
+    font-size: 16px;
+    color: #666
+}
+
+.pagination li .next,.pagination li .prev {
+    font-size: 18px
+}
+
+.pagination>li>a,.pagination>li>span {
+    color: #999;
+    background: 0 0;
+    border-color: transparent;
+    margin-right: 10px
+}
+
+.pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover {
+    background-color: #f6f6f6
+}
+
+.pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover {
+    color: #fff;
+    background-color: #89bbff;
+    border-radius: 2px;
+    cursor: default;
+    border-color: transparent
+}
+
+.pagination-inline .number,.pagination-inline .text-char {
+    display: inline-block;
+    line-height: 29px;
+    color: #999;
+    margin-right: 10px;
+    vertical-align: top
+}
+
+.pop .pagination {
+    margin-top: 20px;
+    margin-bottom: 0
+}
+
+.pagination-inline {
+    text-align: right;
+    font-size: 0
+}
+
+.pagination-inline .number {
+    font-size: 14px
+}
+
+.pagination-inline .text-char {
+    font-size: 20px;
+    position: relative;
+    top: 1px
+}
+
+.pagination-inline .input-text {
+    vertical-align: top;
+    width: 40px;
+    text-align: center;
+    margin-right: 10px
+}
+
+.pagination-inline .btn {
+    vertical-align: top
+}
+
+.pagination-mod {
+    margin: 20px 0
+}

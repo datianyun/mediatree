@@ -1,0 +1,39 @@
+.label{
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.label.edit{
+    background-color: #2fa4e7;
+}
+.label.audit{
+    background-color: #73a839;
+}
+.label.del{
+    background-color: #dd5600;
+}
+.label.order{
+    background-color: #033c73;
+}
+.label.recall{
+    background-color: #c71c22;
+}
+.label.sendmsg{
+    background-color: #5cb85c;
+}
+.label.article{
+    background-color: #f0ad4e;
+}
+
+.clearfix .label {
+    float: left;
+    margin-right: 0.2em;
+    margin-bottom: 0.1em;
+    line-height: 18px;
+}

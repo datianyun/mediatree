@@ -1,0 +1,210 @@
+@import 'base';
+@import '~normalize.css/normalize';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 14px;
+}
+
+.viewpage {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 105px;
+    position: relative;
+}
+
+#root{
+    height: 100%;
+}
+a,a:hover {
+    text-decoration: none
+}
+
+.clearfix:after,.row:after {
+    content: " ";
+    visibility: hidden;
+    clear: both
+}
+
+* html .clearfix,* html .row,.bar,.kt2-license-box .bd .li-middle .avatar {
+    zoom:1}
+
+body,button,caption,div,input,select,td,textarea,th {
+    text-align: left
+}
+
+.btn,body {
+    text-align: center
+}
+
+blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,table,td,textarea,th,ul {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img {
+    border: 0
+}
+
+address,caption,cite,code,dfn,em,th,var {
+    font-style: normal;
+    font-weight: 400
+}
+
+ul li {
+    list-style: none
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 1.1em;
+    vertical-align: baseline
+}
+
+input[type=checkbox],input[type=radio] {
+    vertical-align: middle
+}
+
+textarea {
+    overflow: auto;
+    resize: none
+}
+
+a:focus,button:focus {
+    outline-style: none;
+    outline-width: 0
+}
+.clearfix {
+    zoom:1;
+ }
+
+.clearfix:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+/*面包xue*/
+.main-heading {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.main-heading h2 {
+    color: #333;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 100
+}
+
+.main-heading.bor-bottom {
+    padding-bottom: 11px;
+    border-bottom: 1px solid #cbcbcb
+}
+
+.main-heading .option {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.main-heading .option span {
+    color: #999
+}
+
+.main-inline .option {
+    float: right;
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px
+}
+
+.main-inline .option .icon-article-guide {
+    margin-left: 6px;
+    top: 4px
+}
+
+.breadcrumb-mod {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 35px;
+}
+
+.breadcrumb {
+    font-size: 0;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    color: #999;
+    margin-right: 5px;
+}
+
+.breadcrumb li a {
+    color: #666
+}
+
+.breadcrumb-mod .breadcrumb {
+    float: left;
+    margin-top: 6px
+}
+
+.breadcrumb-mod h3 {
+    float: left;
+    color: #666;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 100
+}
+
+.breadcrumb-mod .option {
+    float: right
+}
+
+.breadcrumb-mod .option .count {
+    font-size: 14px;
+    color: #999;
+    margin-right: 5px
+}
+
+.breadcrumb-mod .option .count em {
+    color: #5091f6
+}
+
+.breadcrumb-mod .option .count.null em {
+    color: #999
+}
+
+.breadcrumb-mod .btn {
+    vertical-align: top;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.breadcrumb-mod .btn .icon-add {
+    top: 9px;
+    margin-right: 3px
+}

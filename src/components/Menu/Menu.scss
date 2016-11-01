@@ -1,0 +1,53 @@
+.menu li {
+    margin-bottom: 15px;
+    color: #999
+}
+
+.menu li a {
+    color: #333;
+    cursor: pointer
+}
+
+.menu li a:hover {
+    color: #2478fa;
+    text-decoration: none
+}
+
+.menu-text {
+    position: relative;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 55px;
+    font-size: 16px
+}
+
+span.menu-text {
+    cursor: default
+}
+
+.menu-text .abr {
+    position: absolute;
+    top: 10px;
+    left: 16px
+}
+
+.menu-sub-text {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 65px;
+    font-size: 14px
+}
+
+.menu-sub li {
+    margin-bottom: 0
+}
+
+.menu li.active .menu-text {
+    color: #2478fa
+}
+
+.menu-sub li.active .menu-sub-text {
+    color: #2478fa
+}
