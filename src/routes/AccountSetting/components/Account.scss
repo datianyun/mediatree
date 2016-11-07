@@ -1,0 +1,45 @@
+.checkbox-inline {
+    position: relative;
+    font-size: 0;
+
+    .ui-radio {
+        position: relative;
+        display: inline-block;
+        *display: inline;
+        *zoom:1;line-height: 18px;
+        cursor: pointer;
+        color: #222;
+        font-size: 14px;
+        margin-top: 8px;
+
+        input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            cursor: pointer
+        }
+
+        .icon-radio {
+            margin-right: 9px;
+            background-image: url(assets/icon-sc040798463.png);
+            background-repeat: no-repeat;
+        }
+        .icon-radio.radio-active, .icon-radio:active {
+            background-position: 0 -2450px;
+        }
+        [class^=icon] {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+            margin-right: 5px;
+        }
+        .icon-radio {
+            background-position: 0 -2424px;
+            height: 16px;
+            width: 16px;
+        }
+    }
+}

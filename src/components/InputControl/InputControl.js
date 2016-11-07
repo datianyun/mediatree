@@ -13,12 +13,12 @@ class InputControl extends Component {
                 curLen : 0,
                 error : false,
                 errorInfo : '',
-                tipInfo : '最大长度' + config.maxLen + '个字(必填)'
+                placeholder : config.placeholder,
+                tipInfo : config.tipInfo
             }
         }
     }
-    handleChange(e){
-        let target = e.currentTarget;
+    handleTypeCount(target){
         let config = this.state.config;
         let option = {};
         let curLen = target.value.length;
@@ -36,20 +36,44 @@ class InputControl extends Component {
         let newConfig = Object.assign({},config,option);
         this.setState({config:newConfig});
     }
+    handleTypeEmpty(target){
+        let config = this.state.config;
+        let option = {};
+        let text = target.value.trim();
+        if(/^\s*$/g.test(text)) {
+            option.error = true;
+            option.errorInfo = this.props.config.errorInfo;
+        } else {
+            option.error = false;
+            option.errorInfo = '';
+        }
+        let newConfig = Object.assign({},config,option);
+        this.setState({config:newConfig});
+    }
+    handleChange(e){
+        let target = e.currentTarget;
+        let config = this.state.config;
+        let type = this.props.type || 'noempty'
+        let option = {};
+        switch(type) {
+            case 'count' :
+                this.handleTypeCount(target)
+            default :
+                this.handleTypeEmpty(target)
+        }
+    }
     render() {
         const config = this.state.config
         return (
-            <div className="form-control">
-                <div className="input-control input-control-count">
-                    <input type="text" className="input-text title"  onChange={this.handleChange.bind(this)}/>
-                    <div className="count">{config.curLen}/{config.maxLen}</div>
+            <div className="controls">
+                <input type="text" className="input-xlarge" placeholder={config.placeholder} onBlur={this.handleChange.bind(this)}/>
+                <div className="controls-help">
+                    <p className="help-block">{config.tipInfo}</p>
                 </div>
                 <p className={classnames({
                     'help-block' : true,
-                    'v_title' : true,
-                    'help-error' : config.error
+                    'error' : config.error
                 })}>{config.errorInfo}</p>
-                <p className="help-block">{config.tipInfo}</p>
             </div>
         )
     }

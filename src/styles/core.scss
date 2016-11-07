@@ -13,6 +13,12 @@ html, body {
   height: 100%;
   font-size: 14px;
 }
+body {
+    font-family: "microsoft yahei";
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
 
 .viewpage {
     width: 100%;
@@ -98,113 +104,16 @@ a:focus,button:focus {
     height: 0;
 }
 
-/*面包xue*/
-.main-heading {
-    position: relative;
-    margin-bottom: 30px;
-    padding-bottom: 11px;
-    border-bottom: 1px solid #cbcbcb;
-}
-
-.main-heading h2 {
-    color: #333;
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 100
-}
-
-.main-heading.bor-bottom {
-    padding-bottom: 11px;
-    border-bottom: 1px solid #cbcbcb
-}
-
-.main-heading .option {
-    position: absolute;
-    right: 0;
-    top: 0
-}
-
-.main-heading .option span {
-    color: #999
-}
-
-.main-inline .option {
-    float: right;
-    color: #666;
+label, input, button, select, textarea {
     font-size: 14px;
-    line-height: 24px;
-    padding-top: 5px
+    font-weight: normal;
+    line-height: 20px;
 }
-
-.main-inline .option .icon-article-guide {
-    margin-left: 6px;
-    top: 4px
-}
-
-.breadcrumb-mod {
-    position: relative;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    min-height: 35px;
-}
-
-.breadcrumb {
-    font-size: 0;
-}
-
-.breadcrumb li {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
-    color: #999;
+.omregister .help-block { font-size: 12px; line-height: 20px; color: #999; margin-top: 5px; }
+.omregister .help-block .icon-success-sm, .omregister .help-block .icon-fail-sm {
+    top: 2px;
     margin-right: 5px;
 }
-
-.breadcrumb li a {
-    color: #666
-}
-
-.breadcrumb-mod .breadcrumb {
-    float: left;
-    margin-top: 6px
-}
-
-.breadcrumb-mod h3 {
-    float: left;
-    color: #666;
-    font-size: 14px;
-    line-height: 36px;
-    font-weight: 100
-}
-
-.breadcrumb-mod .option {
-    float: right
-}
-
-.breadcrumb-mod .option .count {
-    font-size: 14px;
-    color: #999;
-    margin-right: 5px
-}
-
-.breadcrumb-mod .option .count em {
-    color: #5091f6
-}
-
-.breadcrumb-mod .option .count.null em {
-    color: #999
-}
-
-.breadcrumb-mod .btn {
-    vertical-align: top;
-    height: 34px;
-    line-height: 34px;
-    font-size: 14px;
-    padding-left: 10px;
-    padding-right: 10px
-}
-
-.breadcrumb-mod .btn .icon-add {
-    top: 9px;
-    margin-right: 3px
+.omregister .help-block.error {
+    color: #f54040;
 }

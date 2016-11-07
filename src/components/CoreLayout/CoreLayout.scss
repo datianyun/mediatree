@@ -2,12 +2,21 @@
     position: relative;
     padding: 0 20px;
     padding-top: 35px;
-    
+
     .main {
         margin-left: 240px;
+        border: 1px solid rgba(0,0,0,.08);
+        border-bottom: 1px solid #cfcfcf;
+        background-color: #fff;
+        padding: 20px;
     }
     .side {
-        width: 225px;
         float: left;
+        width: 200px;
+        padding-bottom: 15px;
+        border: 1px solid rgba(0,0,0,.08);
+        border-bottom: 1px solid #cfcfcf;
+        background-color: #fff;
+        list-style: none;
     }
 }

@@ -9,14 +9,11 @@ export const CoreLayout = ({ children }) => (
     <div className='viewpage'>
         <Header />
         <div className='wrap clearfix'>
-            <div className="side">
-                <Menu />
-            </div>
+            <Menu></Menu>
             <div className="main">
                 {children}
             </div>
         </div>
-        <Footer />
     </div>
 )
 
