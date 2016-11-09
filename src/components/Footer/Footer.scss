@@ -9,18 +9,17 @@
     border-top: 0;
     text-align: center;
     font-size: 0.14rem;
-}
 
-.footer .footermenu {
-    padding-top: 25px
-}
+    .footermenu {
+        padding-top: 25px
+        a {
+            margin: 0 11px
+        }
+    }
 
-.footer .footermenu a {
-    margin: 0 11px
-}
-
-.footer .copyrighten {
-    padding-top: 9px
+    .copyrighten {
+        padding-top: 9px
+    }
 }
 
 .footer,.footer a {

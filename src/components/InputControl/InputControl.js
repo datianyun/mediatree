@@ -35,6 +35,7 @@ class InputControl extends Component {
         option.curLen = curLen;
         let newConfig = Object.assign({},config,option);
         this.setState({config:newConfig});
+        this.props.inputChange(text);
     }
     handleTypeEmpty(target){
         let config = this.state.config;
@@ -49,6 +50,7 @@ class InputControl extends Component {
         }
         let newConfig = Object.assign({},config,option);
         this.setState({config:newConfig});
+        this.props.inputChange(text);
     }
     handleChange(e){
         let target = e.currentTarget;
@@ -80,7 +82,8 @@ class InputControl extends Component {
 }
 
 InputControl.propTypes = {
-    config : PropTypes.object
+    config : PropTypes.object,
+    inputChange : PropTypes.func
 }
 
 export default InputControl

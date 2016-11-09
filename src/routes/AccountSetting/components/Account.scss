@@ -1,6 +1,7 @@
 .checkbox-inline {
     position: relative;
     font-size: 0;
+    left: -30px;
 
     .ui-radio {
         position: relative;
@@ -11,6 +12,7 @@
         color: #222;
         font-size: 14px;
         margin-top: 8px;
+        margin-left: 30px;
 
         input {
             position: absolute;
