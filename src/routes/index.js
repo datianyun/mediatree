@@ -1,19 +1,17 @@
 // We only need to import the modules necessary for initial render
 import CoreLayout from '../components/CoreLayout/CoreLayout'
 import accountRoute from './AccountSetting'
-import actManager from './ActivityManager'
-import ActivityRoute from './Activity'
+import searchRoute from './AccountSearch'
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
 
 export const createRoutes = (store) => ({
     path        : '/',
     component   : CoreLayout,
-    indexRoute  : actManager(store),
+    indexRoute  : accountRoute(store),
     childRoutes : [
-        actManager(store),
         accountRoute(store),
-        ActivityRoute(store)
+        searchRoute(store)
     ]
 })
 

@@ -29,7 +29,7 @@ class Header extends Component {
                         })} data-id="1">
                             帐号绑定
                         </Link>
-                        <Link to='/activity' className={classnames({
+                        <Link to='/search' className={classnames({
                             page:true,
                             on: activeTab === '2'
                         })} data-id="2">
