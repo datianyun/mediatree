@@ -77,7 +77,7 @@ const initialState = {
             op_str: {
                 order: {
                     ename: "order",
-                    sname: "订单",
+                    sname: "修改",
                     url: "/expService/OrderManage",
                     param: {
                         id: "202"
@@ -86,7 +86,7 @@ const initialState = {
                 },
                 article: {
                     ename: "article",
-                    sname: "文章",
+                    sname: "解除",
                     url: "/article/expArticles",
                     param: {
                         service_id: "202"
@@ -95,7 +95,7 @@ const initialState = {
                 },
                 sendmsg: {
                     ename: "sendmsg",
-                    sname: "通知",
+                    sname: "添加",
                     url: "/expService/CreateMsg",
                     param: {
                         fid: "202"

@@ -58,9 +58,9 @@ class Manager extends Component {
         return tarray;
     }
     render() {
-        const actData = this.props.actManager;
+        const actData = this.props.actData;
         const columns = ['体验ID','体名称','报名截止时间','文章截止时间','运营商','体验发布人','体验资格数量','申请人数','申请状态','操作'];
-        const tdata = this.combineTdata(actData.data.list);
+        const tdata = this.combineTdata(search.data.list);
         const config = {
             currentPage : 1,
             total : 200,
@@ -68,10 +68,6 @@ class Manager extends Component {
         }
         return (
             <div>
-                <div className="main-heading bor-bottom main-inline">
-                    <h2>体验活动列表</h2>
-                </div>
-                <SearchBar></SearchBar>
                 <Table columns={columns} tdata={tdata}></Table>
                 <Paging config={config}></Paging>
             </div>

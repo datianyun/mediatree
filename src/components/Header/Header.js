@@ -6,9 +6,25 @@ import './Header.scss'
 class Header extends Component {
     constructor(props, context) {
         super(props, context)
+        let activeTab = this.initialMenu()
         this.state = {
-            activeTab : '1'
+            activeTab : activeTab
         }
+    }
+    initialMenu(){
+        let path = window.location.pathname
+        let result = '1'
+        switch(path){
+            case '/search' :
+                result = '2'
+                break
+            case '/account' :
+                result = '1'
+                break
+            default :
+                result = '1'
+        }
+        return result
     }
     handleClick(e){
         let target = e.target;

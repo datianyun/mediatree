@@ -8,7 +8,7 @@ import Manager from '../components/Search'
 
 
 const mapDispatchToProps = {
-
+    
 }
 
 const mapStateToProps = (state) => ({
