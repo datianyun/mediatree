@@ -2,8 +2,7 @@
 import CoreLayout from '../components/CoreLayout/CoreLayout'
 import accountRoute from './AccountSetting'
 import searchRoute from './AccountSearch'
-/*  Note: Instead of using JSX, we recommend using react-router
-    PlainRoute objects to build route definitions.   */
+import logRoute from './Log'
 
 export const createRoutes = (store) => ({
     path        : '/',
@@ -11,26 +10,9 @@ export const createRoutes = (store) => ({
     indexRoute  : accountRoute(store),
     childRoutes : [
         accountRoute(store),
-        searchRoute(store)
+        searchRoute(store),
+        logRoute(store)
     ]
 })
-
-/*  Note: childRoutes can be chunked or otherwise loaded programmatically
-    using getChildRoutes with the following signature:
-
-    getChildRoutes (location, cb) {
-      require.ensure([], (require) => {
-        cb(null, [
-          // Remove imports!
-          require('./Counter').default(store)
-        ])
-      })
-    }
-
-    However, this is not necessary for code-splitting! It simply provides
-    an API for async route definitions. Your code splitting should occur
-    inside the route `getComponent` function, since it is only invoked
-    when the route exists and matches.
-*/
 
 export default createRoutes

@@ -14,7 +14,7 @@ class Upload extends Component {
         this.state = {
             supportClick: true,
             multiple: false,
-            uploadUrl: 'http://upload.qiniu.com',
+            uploadUrl: this.props.uploadUrl || 'http://upload.qiniu.com',
             isDragActive: false,
             files:[]
         }
@@ -41,21 +41,21 @@ class Upload extends Component {
             isDragActive: false
         });
 
-        var files;
+        let files;
         if (e.dataTransfer) {
             files = e.dataTransfer.files;
         } else if (e.target) {
             files = e.target.files;
         }
 
-        var maxFiles = (this.state.multiple) ? files.length : 1;
+        let maxFiles = (this.state.multiple) ? files.length : 1;
 
         if (this.props.onUpload) {
             files = Array.prototype.slice.call(files, 0, maxFiles);
             this.props.onUpload(files, e);
         }
 
-        for (var i = 0; i < maxFiles; i++) {
+        for (let i = 0; i < maxFiles; i++) {
             files[i].preview = URL.createObjectURL(files[i]);
             files[i].request = this.upload(files[i]);
             files[i].uploadPromise = files[i].request.promise();
@@ -73,17 +73,17 @@ class Upload extends Component {
      }
 
      open() {
-         var fileInput = ReactDOM.findDOMNode(this.refs.fileInput);
+         let fileInput = ReactDOM.findDOMNode(this.refs.fileInput);
          fileInput.value = null;
          fileInput.click();
      }
      upload(file) {
          if (!file || file.size === 0) return null;
-         var key = file.preview.split('/').pop() + '.' + file.name.split('.').pop();
+         let key = file.preview.split('/').pop() + '.' + file.name.split('.').pop();
          if (this.props.prefix) {
              key = this.props.prefix  + key;
          }
-
+         let onComplete = this.props.onComplete
          if(this.props.uploadKey){
              key = this.props.uploadKey;
          }
@@ -95,7 +95,7 @@ class Upload extends Component {
              .field('x:filename', file.name)
              .field('x:size', file.size)
              .attach('file', file, file.name)
-             .set('Accept', 'application/json');
+             .set('Accept', 'application/json')
              if (isFunction(file.onprogress)) {
                  r.on('progress', file.onprogress);
              }
@@ -126,14 +126,13 @@ class Upload extends Component {
 
 Upload.propTypes = {
     onDrop: React.PropTypes.func,
-    // called before upload to set callback to files
     onUpload: React.PropTypes.func,
     size: React.PropTypes.number,
     style: React.PropTypes.object,
     supportClick: React.PropTypes.bool,
     accept: React.PropTypes.string,
     multiple: React.PropTypes.bool,
-    // Qiniu
+    onComplete: React.PropTypes.func,
     uploadUrl: React.PropTypes.string,
     uploadKey: React.PropTypes.string,
     prefix: React.PropTypes.string

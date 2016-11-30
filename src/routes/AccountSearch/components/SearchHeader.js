@@ -2,32 +2,24 @@ import React, {Component,PropTypes} from 'react'
 class SearchHeader extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            
-        }
-    }
-
-    componentDidMount() {
-
-    }
-
-    componentWillReceiveProps(nextProps) {
-
     }
 
     render() {
+        const {data,handleSearch,handleChange,handleCancel} = this.props
         return (
             <form className="form-inline form-search">
-                <input type="text" placeholder="请输入帐号id，媒体名或注册邮箱" />
-                <button type="submit" className="btn">搜索</button>
-                <button type="submit" className="btn">返回</button>
+                <input type="text" onChange={handleChange} value={data} placeholder="请输入母帐号ID" />
+                <button type="submit" className="btn" onClick={handleSearch}>搜索</button>
+                <button type="submit" className="btn" onClick ={handleCancel}>返回</button>
             </form>
         )
     }
 }
 
 SearchHeader.propTypes = {
-
+    handleSearch : PropTypes.func,
+    handleChange : PropTypes.func,
+    handleCancel : PropTypes.func,
 }
 
 export default SearchHeader

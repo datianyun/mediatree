@@ -21,6 +21,9 @@ class Header extends Component {
             case '/account' :
                 result = '1'
                 break
+            case '/log' :
+                result = '3'
+                break
             default :
                 result = '1'
         }
@@ -35,6 +38,9 @@ class Header extends Component {
     }
     render() {
         let activeTab = this.state.activeTab
+        const userName = g_userInfo.user
+        const gtype = g_userInfo.site
+        const pname = gtype === 'tree_government' ? '政府类子母帐号管理' : '非政府类子母帐号管理'
         return (
             <div className="header">
                 <div className="container">
@@ -51,11 +57,17 @@ class Header extends Component {
                         })} data-id="2">
                             关系查询管理
                         </Link>
+                        <Link to='/log' className={classnames({
+                            page:true,
+                            on: activeTab === '3'
+                        })} data-id="3">
+                            日志查询
+                        </Link>
                     </div>
                     <div className="userBanner">
-                        <span className="ng-binding">欢迎你 yuntian</span>
-            			<span className="ng-binding">子母帐号管理</span>
-                        <span><a href="http://pass2.webdev.com/project/change?project_code=ommedia">[切换]</a></span>
+                        <span className="ng-binding">欢迎你 {userName}</span>
+            			<span className="ng-binding">{pname}</span>
+                        <span><a href="http://pass2.webdev.com/project/change?project_code=mediatree">[切换]</a></span>
                     </div>
                 </div>
             </div>

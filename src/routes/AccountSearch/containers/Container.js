@@ -1,14 +1,11 @@
-
 import { connect } from 'react-redux'
-import { actChange, actSearch } from '../modules/Search'
-
-/*  container组件 只定义需要的action或者states*/
-
+import { fetchData, mediaSearch } from '../modules/Search'
 import Manager from '../components/Search'
 
 
 const mapDispatchToProps = {
-    
+    fetchData,
+    mediaSearch
 }
 
 const mapStateToProps = (state) => ({

@@ -6,15 +6,16 @@ class Paging extends Component {
         super(props, context)
     }
     handlePage(e){
-        let target = e.target.parentNode;
-        const data = this.props.config;
-        let cname = target.className;
+        let target = e.target.parentNode
+        const data = this.props.config
+        const pageAction = this.props.onclick
+        let cname = target.className
         let total =  Math.ceil(data.total/data.perNum);
         let pageConfig = {
             currentPage : data.currentPage,
             perNum : data.perNum
-        };
-        if(cname.indexOf('disagble')!==-1){
+        }
+        if(cname.indexOf('disable')!==-1){
             return
         } else if(cname.indexOf('page')!==-1){
             pageConfig = Object.assign({},pageConfig,{
@@ -37,6 +38,10 @@ class Paging extends Component {
                 currentPage : total
             })
         }
+        pageAction({
+            page : pageConfig.currentPage,
+            size : pageConfig.perNum
+        })
     }
     render() {
         const {currentPage,total,perNum} = this.props.config;
@@ -90,7 +95,8 @@ class Paging extends Component {
 }
 
 Paging.propTypes = {
-    config : PropTypes.object
+    config : PropTypes.object,
+    onclick : PropTypes.func
 }
 
 export default Paging

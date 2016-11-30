@@ -31,7 +31,11 @@ class Table extends Component {
                                     return <td key={j} className={obj.className}>{obj.value}</td>
                                 } else {
                                     let html = {__html: obj.value};
-                                    return <td key={j} className={obj.className} dangerouslySetInnerHTML={html}></td>
+                                    if(obj.click && obj.click instanceof Function){
+                                        return <td onClick={obj.click} key={j} className={obj.className} dangerouslySetInnerHTML={html}></td>
+                                    } else {
+                                        return <td key={j} className={obj.className} dangerouslySetInnerHTML={html}></td>
+                                    }
                                 }}
                             } else {
                                 return <td key={j}>{obj}</td>

@@ -58,20 +58,9 @@ const config = {
     { type : 'lcov', dir : 'coverage' }
   ]
 }
-
-/************************************************
--------------------------------------------------
-
-All Internal Configuration Below
-Edit at Your Own Risk
-
--------------------------------------------------
-************************************************/
-
 // ------------------------------------
 // Environment
 // ------------------------------------
-// N.B.: globals added here must _also_ be added to .eslintrc
 config.globals = {
   'process.env'  : {
     'NODE_ENV' : JSON.stringify(config.env)
